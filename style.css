@@ -83,6 +83,19 @@ input::placeholder {
   font-weight: 400;
   font-size: 10px;
   line-height: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+.input-text {
+  width: 100%;
+  height: 100%;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
 }
 
 .buttons {
@@ -123,12 +136,17 @@ input::placeholder {
 }
 
 .play-button {
-  background-color: #36aaf9;
-  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 10px 10px;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
   transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  background-color: #36aaf9;
+  border: none;
 }
 
 .play-button:hover {
@@ -136,14 +154,79 @@ input::placeholder {
   transform: scale(0.9);
 }
 
+.play-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+}
+
+.forward-button {
+  background-color: transparent;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.forward-button:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+  filter: invert(50%) sepia(100%) saturate(379%) hue-rotate(163deg)
+    brightness(98%) contrast(98%);
+}
+
+.backward-button {
+  background-color: transparent;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.backward-button:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+  filter: invert(50%) sepia(100%) saturate(379%) hue-rotate(163deg)
+    brightness(98%) contrast(98%);
+}
+
+.loop-button {
+  background-color: transparent;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.loop-button:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
 .line {
   display: flex;
+  width: 100px;
+  height: 4px;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.line:hover {
+  filter: brightness(150%);
 }
 
 .loop {
   display: flex;
+  filter: invert(100%) sepia(98%) saturate(2%) hue-rotate(93deg)
+    brightness(106%) contrast(101%);
 }
 
-.volume {
+.loop:hover {
+  filter: invert(50%) sepia(100%) saturate(379%) hue-rotate(163deg)
+    brightness(98%) contrast(98%);
+}
+
+.volume-icon {
   display: flex;
+}
+
+.active {
+  filter: invert(50%) sepia(100%) saturate(379%) hue-rotate(163deg)
+    brightness(98%) contrast(98%);
 }
