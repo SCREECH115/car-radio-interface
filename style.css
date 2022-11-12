@@ -230,3 +230,14 @@ input:focus::placeholder {
   filter: invert(50%) sepia(100%) saturate(379%) hue-rotate(163deg)
     brightness(98%) contrast(98%);
 }
+
+.muted {
+  filter: invert(51%) sepia(73%) saturate(7499%) hue-rotate(346deg)
+    brightness(88%) contrast(149%);
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    transform: translate(-50%, -50%) scale(2);
+  }
+}

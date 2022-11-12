@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Radio Interface</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="main.js" defer></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -42,16 +42,22 @@
           </div>
           <div class="player-bottom">
             <div class="volume-icon">
-              <img src="img/volume.svg" class="volume-icon" alt="" />
+              <img
+                src="img/volume.svg"
+                class="volume-icon"
+                id="volume-icon"
+                alt=""
+              />
             </div>
             <div class="volume" id="volume">
               <input
                 type="range"
-                min="1"
+                min="0"
                 max="100"
                 value="50"
                 step="1"
                 class="line"
+                id="volumeRange"
               />
             </div>
             <div class="loop" id="loop">
