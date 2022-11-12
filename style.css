@@ -109,6 +109,7 @@ input:focus::placeholder {
   background-color: #14141a;
   margin: -5px 5px 5px 5px;
   border-radius: 5px;
+  user-select: none;
 }
 
 .player-top {
@@ -133,6 +134,7 @@ input:focus::placeholder {
   margin-left: 5px;
   gap: 10px;
   margin-top: 15px;
+  user-select: none;
 }
 
 .play-button {
@@ -147,6 +149,7 @@ input:focus::placeholder {
   overflow: hidden;
   background-color: #36aaf9;
   border: none;
+  user-select: none;
 }
 
 .play-button:hover {
@@ -160,12 +163,14 @@ input:focus::placeholder {
   align-items: center;
   width: 20px;
   height: 20px;
+  user-select: none;
 }
 
 .forward-button {
   background-color: transparent;
   border: none;
   transition: all 0.3s ease-in-out;
+  user-select: none;
 }
 
 .forward-button:hover {
@@ -179,6 +184,7 @@ input:focus::placeholder {
   background-color: transparent;
   border: none;
   transition: all 0.3s ease-in-out;
+  user-select: none;
 }
 
 .backward-button:hover {
@@ -192,6 +198,7 @@ input:focus::placeholder {
   background-color: transparent;
   border: none;
   transition: all 0.3s ease-in-out;
+  user-select: none;
 }
 
 .loop-button:hover {
@@ -205,6 +212,7 @@ input:focus::placeholder {
   height: 4px;
   border-radius: 2px;
   transition: all 0.3s ease-in-out;
+  user-select: none;
 }
 
 .line:hover {
@@ -213,6 +221,7 @@ input:focus::placeholder {
 
 .loop {
   display: flex;
+  user-select: none;
   filter: invert(100%) sepia(98%) saturate(2%) hue-rotate(93deg)
     brightness(106%) contrast(101%);
 }
@@ -224,6 +233,7 @@ input:focus::placeholder {
 
 .volume-icon {
   display: flex;
+  user-select: none;
 }
 
 .active {
