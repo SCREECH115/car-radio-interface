@@ -22,6 +22,7 @@ range.addEventListener("input", function () {
   if (range.value == 0) {
     console.log("Muted");
     volumeIcon.classList.add("muted");
+    volumeIcon.style.transition = "all 0.5s";
   } else {
     volumeIcon.classList.remove("muted");
   }
